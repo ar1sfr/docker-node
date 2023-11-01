@@ -3,7 +3,7 @@ FROM alpine:3.18
 LABEL maintainer="Aris Fathur Rahman <fathur.fathur7@gmail.com>" \
     engine="Node 16.x.x"
 
-ENV NODE_VERSION 16.20.1
+ENV NODE_VERSION 16.20.2
 
 RUN addgroup -g 1000 node \
     && adduser -u 1000 -G node -s /bin/sh -D node \
@@ -15,7 +15,7 @@ RUN addgroup -g 1000 node \
     && case "${alpineArch##*-}" in \
     x86_64) \
     ARCH='x64' \
-    CHECKSUM="320cb39e6d3cab1682c6fd97ae9e4e748783143262cc6ff96c93a4f44e818404" \
+    CHECKSUM="d2df78a192bd78b958e19a77821916a38def5e9e46c0c9a0989fdf5eb6c14a7e" \
     ;; \
     *) ;; \
     esac \
